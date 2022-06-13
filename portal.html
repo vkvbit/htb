@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>V portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./cstyle.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" defer></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="overlay"></div>
+	<div class="scanline"></div>
+<div class="wrapper">	
+<div class="content clearfix">
+		
+		<header class="site clearfix">
+		<div class="col one">
+			<img src="./plogo.png" width="740" height="729" id="logo-v" />
+		</div>
+			<div class="col two">
+				<h4>HTB Systems <br /> <b>H</b>ack <b>T</b>he <b>B</b>ox <b> - </b> <b>D</b>r. <b>AITH</b></h4>
+				<p>----------------------------------------</p>
+				<p>HTB v 1.0.0</p>
+				<p>(c)2022-2024 vkvbit</p>
+				<p>- Hack The Box -</p>
+			</div>
+		</header>
+		
+		<nav class="site clear">
+			<ul>
+				<li><a href="index.html" title="">Return Home</a></li>
+				<li><a href="terminate.html" title="">Terminate Session</a></li>
+				<li><a href="https://www.linkedin.com/company/htb-aith" title="">LinkedIn</a></li>
+				<li><a href="https://app.hackthebox.com/universities/overview/806" title="">HTB Dr. AITH Page</a></li>
+			</ul>
+		</nav>
+				
+		<p>System Administrator Integrated Message System (SAIMS)</p>
+		<p>System Administrator (SYSADM) - vkvbit</p>
+
+		<p class="clear"><br /></p>
+
+		<p>Welcome to the System Administrator Integrated Message System (SAIMS). Fill out the fields below and press the SUBMIT button. The system administrator (SYSADM) will respond to your query after an appropriate amount of quiet contemplation. Thank you for contacting the System Administrator's Office.</p><br />
+		
+		<form>
+			<label>Name >></label><input type="text" /><br />
+			<label>Email >></label><input type="text" /><br />
+			<label>Subject >></label><input type="text" id="subject" /><br />
+			<label>Message >></label><textarea id="msg" rows="1"></textarea><br /><br /><br />
+			<input type="submit" value="Submit" onclick="formSubmit()">
+			<a class="button" alt="" href="index.html">Cancel</a>
+		</form>
+	</div>
+</div>
+<!-- partial -->
+
+<script type="text/javascript">
+	function formSubmit(){
+		subject = document.getElementById("subject").value;
+		msg = document.getElementById("msg").value;
+		link = "mailto:vaibhav@vkvbit.me?subject=" + subject + "&body=" + msg;
+		location.href = link;
+	}
+</script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://static.tumblr.com/maopbtg/oimmiw86r/jquery.autosize-min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
